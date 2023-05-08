@@ -6,6 +6,7 @@ const typeDefs = gql`
         numberOfAnimals: Int
         price: Float
         isAvailable: Boolean
+        bigArray: [String]
     }
 `
 
@@ -22,6 +23,9 @@ const resolvers = {
         },
         isAvailable: () => {
             return false
+        },
+        bigArray: () => {
+            return ['Nasief','Riyaaz','Ahmed','Ammarah']
         }
     }
 }
