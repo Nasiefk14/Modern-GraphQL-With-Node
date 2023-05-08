@@ -4,6 +4,8 @@ const typeDefs = gql`
     type Query {
         hello: String
         numberOfAnimals: Int
+        price: Float
+        isAvailable: Boolean
     }
 `
 
@@ -14,6 +16,12 @@ const resolvers = {
         },
         numberOfAnimals: () => {
             return 69
+        },
+        price: () => {
+            return 420.69
+        },
+        isAvailable: () => {
+            return false
         }
     }
 }
